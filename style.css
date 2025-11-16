@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poiret';
+    src: url(assets/fonts/PoiretOne-Regular.ttf);
+}
+
+body{
+    background-color: rgb(188, 202, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poiret';
+    padding: 20px;
+}
+
+h1{
+    color: rgb(37, 36, 36);
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    max-width: 95%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.301);
+    padding: 20px;
+    font-weight: bold;
+}
+
+.inputSection{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+input{
+    width: 90px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 5px;
+}
+
+input:focus {
+  border-color: rgb(87, 130, 248);
+  box-shadow: 0 0 5px rgba(87, 130, 248, 0.4);
+}
+
+#addButton{
+    background-color: rgb(150, 173, 235);
+    color: black;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Poiret';
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+#listContainer{
+    border: 2px solid rgb(87, 130, 248);
+    border-radius: 2px;
+    height: auto;
+    width: 50%;
+    display: none;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    line-height: 25px;
+    text-align: center ;
+    transition: all 0.3s ease-in-out;
+}
+
+#summaryContainer{
+    border: 2px solid rgb(87, 130, 248);
+    border-radius: 2px;
+    height: auto;
+    width: 50%;
+    display: none;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    line-height: 25px;
+    text-align: center ;
+    transition: all 0.3s ease-in-out;
+}
+
+#finalizeButton{
+    background-color: rgb(150, 173, 235);
+    color: black;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Poiret';
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 450px) {
+label {
+    font-size: 1rem;
+    text-align: center;
+}
+
+input{
+    width: 70px;
+}
+
+#summaryContainer, #listContainer{
+    width: 80%;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+#addButton, #finalizeButton {
+    padding: 6px 20px;
+    font-size: 0.9rem;
+}
+}
